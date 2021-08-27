@@ -1,0 +1,36 @@
+.body {
+    background-color: black;
+    color: aqua;
+    font-family: Cuprum, serif;
+}
+.page {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.java__script {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: center;
+    font-size: 60px;
+    font-style: normal;
+}
+.logo {
+    background-image: url("images/javascript.png");
+    position: center;
+    display: block;
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+hr {
+    opacity: 0.5;
+}
+h2 {
+    margin-top: 50px;
+}
+blockquote {
+    max-width: 400px;
+}
