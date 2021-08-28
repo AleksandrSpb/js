@@ -106,6 +106,53 @@
         morningList[morningList.length] = "Помыть посуду";<br>
         console.log(morningList);</blockquote>
     <h2>Циклы for, while, do...while</h2>
+    <p>В прошлом уроке вы создали массив дел на утро.
+        Циклом for выведите в консоль каждое из дел по порядку.</p>
+    <blockquote>let morningList = [<br>
+        'Встать с кровати',<br>
+        'Почистить зубы',<br>
+        'Сделать зарядку',<br>
+        'Позавтракать',<br>
+        'Помыть посуду'<br>
+        ];
+        for (let i= 0; i<morningList.length; i=i+1)<br>
+        {console.log(morningList[i]);}</blockquote>
+    <hr>
+    <p>Список дел внушительный — как на всё найти силы? Давайте поленимся. Измените цикл таким образом, чтобы в консоль выводилось каждое второе дело.</p>
+    <blockquote>let morningList = [<br>
+        'Встать с кровати',<br>
+        'Почистить зубы',<br>
+        'Сделать зарядку',<br>
+        'Позавтракать',<br>
+        'Помыть посуду'<br>
+        ];
+        for(let i = 1; i < morningList.length; i=i+2) {<br>
+        console.log(morningList[i]);
+        }</blockquote>
+    <hr>
+    <p>Вернёмся к циклу, который выводит элементы по одному, и перепишем его с помощью while.<br>
+        Цикл for содержит в скобках три выражения, записанные через точку с запятой:<br>
+        инициализация, у нас let i = 0;<br>
+        условие, у нас i < morningList.length;<br>
+        финальное выражение, у нас i +=1.<br>
+        Замените цикл for на цикл while:<br>
+        Объявите счётчик перед циклом.<br>
+        Поменяйте слово for на while, а в скобках оставьте только проверку условия.<br>
+        Финальное выражение поместите в тело цикла после console.log.</p>
+    <blockquote>let morningList = [<br>
+        'Встать с кровати',<br>
+        'Почистить зубы',<br>
+        'Сделать зарядку',<br>
+        'Позавтракать',<br>
+        'Помыть посуду'<br>
+        ];
+
+        // for (инициализация; условие; финальное выражение)<br>
+        let i = 0;<br>
+        while ( i < morningList.length ) {<br>
+        console.log(morningList[i]);
+        i =i + 1;
+        }</blockquote>
 </div>
 </body>
 </html>
