@@ -27,9 +27,62 @@ let fahrenheit= 451;
 let celsius = (fahrenheit - 32) / 1.8;
 console.log(celsius);*/
 
-let stroka1 = "шалаш";
+/*let stroka1 = "шалаш";
 function reverseString(stroka) {
      stroka = stroka1.split("").reverse().join("");
     return stroka;
 }
-console.log(stroka===stroka1);
+console.log(stroka===stroka1);*/
+
+/*
+function consoleKitten() {
+    let a = '  Λ _ Λ';
+    let b = ' (=චᆽච=)==∫';
+    let c = '   ˉ ˉ   ˉ ˉ';
+
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+consoleKitten();*/
+/*function keepScore(ours, theirs) {
+    // Проверим, забили наши больше голов или нет:
+    if (ours > theirs) {
+        console.log('Выиграли! 😃 Счёт ' + ours + ':' + theirs);
+
+        // Если наши забили не больше голов,
+        // то может столько же? Проверим:
+    } else if (ours === theirs) {
+        console.log('Ничья. 😐 Счёт ' + ours + ':' + theirs);
+
+        // Если два предыдущих условия не выполнены,
+        // стало быть, наши забили меньше голов :(
+    } else {
+        console.log('Продули... 😢 Счёт ' + ours + ':' + theirs);
+    }
+}
+keepScore(10, 10);*/
+
+/*let employee = {firstName:'Василий', lastName:' Тёркин',age:28} //допишите код здесь
+function getFullName () {
+    employee = employee.firstName +  employee.lastName;
+    console.log(employee);
+    return employee;
+}
+getFullName();*/
+
+/*let employee = {firstName:'Василий', lastName:'Тёркин',age:28}; //допишите код здесь
+function fgetFullName() {
+    employee = employee.firstName+ " " +  employee.lastName;
+    console.log(employee);
+}
+fgetFullName();*/
+let employee = {
+    firstName: 'Василий',
+    lastName: 'Тёркин',
+    age: 28,
+}
+function getFullName(employee){
+    console.log(employee.firstName + ' ' + employee.lastName);
+}
+getFullName(employee);

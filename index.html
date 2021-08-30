@@ -153,6 +153,104 @@
         console.log(morningList[i]);
         i =i + 1;
         }</blockquote>
+    <h2>Функции: определение и вызов</h2>
+    <p>Мы написали функцию-счётчик, которая увеличивает переменную counter при каждом вызове. <br>
+        Вызовите функцию три раза и выведите значение переменной counter в консоль.</p>
+    <blockquote>let counter = 0;<br>
+
+        function increaseCounter() {<br>
+        counter++;
+        }
+
+        // Вызовите функцию 3 раза<br>
+        increaseCounter();<br>
+        increaseCounter();<br>
+        increaseCounter();<br>
+        console.log(counter);</blockquote>
+    <hr>
+    <p>Это код проверки года на високосность из урока про условия. <br>
+        Определите функцию под названием isLeapYear и перенесите весь код внутрь.</p>
+    <blockquote>let year = 2020;<br>
+        function isLeapYear() {<br>
+        if ((year % 400 === 0) || ((year % 4 === 0) && !(year % 100 === 0))) {<br>
+        console.log(year + ' год - високосный');<br>
+        } else {
+        console.log(year + ' год - невисокосный');<br>
+        }
+        }
+        isLeapYear();</blockquote>
+    <hr>
+    <p>В предыдущем задании вы описали функцию для проверки кода на високосность. В этом задании вам предстоит сделать её более универсальной. Чтобы функция могла проверять любой год на високосность, получая его как параметр.
+        Удалите определение переменной year и добавьте параметр функции с таким же названием.</p>
+    <blockquote>function isLeapYear(year) {<br>
+        if ((year % 400 === 0) || ((year % 4 === 0) && !(year % 100 === 0))) {<br>
+        console.log(year + ' год - високосный');<br>
+        } else {
+        console.log(year + ' год - невисокосный');<br>
+        }
+        }
+        isLeapYear(2020);</blockquote>
+    <hr>
+    <p>Функция проверки года на високосность готова — пора её вызвать. <br>
+        Сделайте это трижды с разными значениями года: 2020, 2021 и 2022.</p>
+    <blockquote>function isLeapYear(year) {<br>
+        if ((year % 400 === 0) || ((year % 4 === 0) && !(year % 100 === 0))) {<br>
+        console.log(year + ' год - високосный');<br>
+        } else {
+        console.log(year + ' год - невисокосный');<br>
+        }
+        }
+        isLeapYear(2020);<br>
+        isLeapYear(2021);<br>
+        isLeapYear(2022);</blockquote>
+    <hr>
+    <p>Функция проверяет год и выводит сообщение в консоль. Это неудачное решение, потому что нам может понадобиться это сообщение не только в консоли, но и где-то ещё.<br>
+        Замените все инструкции console.log внутри функции на return.<br>
+        Обратите внимание, что скобки для return не нужны.</p>
+    <blockquote>function isLeapYear(year) {<br>
+        if ((year % 400 === 0) || ((year % 4 === 0) && !(year % 100 === 0))) {<br>
+        return year + ' год - високосный';<br>
+        } else {
+        return year + ' год - невисокосный';<br>
+        }
+        }
+        isLeapYear(2020);<br>
+        isLeapYear(2021);<br>
+        isLeapYear(2022);</blockquote>
+    <hr>
+    <p>Оставьте только один из трёх вызовов функции, с 2020 годом, остальные удалите — они не понадобятся.<br>
+        Запишите результат вызова функции в переменную checkResult.<br>
+        Отобразите эту переменную во всплывающем окне с помощью alert, а также выведите в консоль.</p>
+    <blockquote>function isLeapYear(year) {<br>
+        if ((year % 400 === 0) || ((year % 4 === 0) && !(year % 100 === 0))) {<br>
+        return year + ' год - високосный';<br>
+        } else {
+        return year + ' год - невисокосный';<br>
+        }
+        }
+        let checkResult = isLeapYear(2020);<br>
+        alert(checkResult);
+        console.log(checkResult);</blockquote>
+    <h2>Объекты</h2>
+    <p>Создайте переменную employee. Запишите в неё объект с полями:<br>
+        firstName — 'Василий'.<br>
+        lastName — 'Тёркин'.<br>
+        age — 28.<br>
+        Выведите объект в консоль.</p>
+    <blockquote>let employee = {firstName:'Василий', lastName:'Тёркин',age:28}<br> //допишите код здесь
+        console.log(employee);</blockquote>
+    <p>Напишите функцию getFullName, которая принимает на вход объект employee с двумя свойствами: firstName и lastName. Функция должна выводить в консоль новую строку: имя и фамилию сотрудника через пробел.
+        После того как создадите функцию — вызовите её.</p>
+    <blockquote>let employee = {
+        firstName: 'Василий',<br>
+        lastName: 'Тёркин',<br>
+        age: 28,
+        }
+        function getFullName(employee){<br>
+        console.log(employee.firstName + ' ' + employee.lastName);<br>
+        }
+        getFullName(employee);</blockquote>
+
 </div>
 </body>
 </html>
