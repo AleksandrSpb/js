@@ -44,3 +44,6 @@ h2 {
     max-width: 100%;
     display: block;
 }
+.subtitle {
+    font-size: 40px;
+}

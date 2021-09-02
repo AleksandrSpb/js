@@ -77,7 +77,7 @@ function fgetFullName() {
     console.log(employee);
 }
 fgetFullName();*/
-let employee = {
+/*let employee = {
     firstName: 'Василий',
     lastName: 'Тёркин',
     age: 28
@@ -88,4 +88,29 @@ function getFullName(employee){
 getFullName(employee);
 employee.fullName = getFullName(employee);
 console.log(employee.fullName);
-console.log(employee)
+console.log(employee)*/
+
+/*let document = {one:25, two:30, three:45};
+console.log(document.one);*/
+const acrostic = [
+    'Ангел лёг у края небосклона.',
+    'Наклонившись, удивлялся безднам.',
+    'Новый мир был синим и беззвездным.',
+    'Ад молчал, не слышалось ни стона.',
+    ' ',
+    'Алой крови робкое биенье,',
+    'Хрупких рук испуг и содроганье.',
+    'Миру лав досталось в обладанье',
+    'Ангела святое отраженье.',
+    'Тесно в мире! Пусть живёт, мечтая',
+    'О любви, о грусти и о тени,',
+    'В сумраке предвечном открывая',
+    'Азбуку своих же откровений.'
+];
+
+let annaAkhmatova = ''; // Объявляем переменную, в которой будет собрана итоговая строка
+
+for (let i = 0; i < acrostic.length; i += 1) {
+    annaAkhmatova += acrostic[i][0];
+}
+console.log(annaAkhmatova);
