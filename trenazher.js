@@ -80,9 +80,12 @@ fgetFullName();*/
 let employee = {
     firstName: 'Василий',
     lastName: 'Тёркин',
-    age: 28,
+    age: 28
 }
 function getFullName(employee){
-    console.log(employee.firstName + ' ' + employee.lastName);
+    return(employee.firstName + ' ' + employee.lastName);
 }
 getFullName(employee);
+employee.fullName = getFullName(employee);
+console.log(employee.fullName);
+console.log(employee)

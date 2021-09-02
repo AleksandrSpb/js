@@ -12,245 +12,287 @@
 <div class="page">
     <div class="logo"></div>
     <h1 class="java__script">Java Script</h1>
-
-    <p>Добавьте новую переменную celsius и запишите в неё значение, рассчитанное по формуле перевода температуры из
+    <p class="condition">Добавьте новую переменную celsius и запишите в неё значение, рассчитанное по формуле перевода
+        температуры из
         градусов по Фаренгейту в градусы Цельсия:
         (fahrenheit - 32) / 1.8;</p>
-    <blockquote>let fahrenheit= 451;<br>
+    <code class="code">let fahrenheit= 451;
         let celsius = (fahrenheit - 32) / 1.8;
-    </blockquote>
+    </code>
     <hr>
-    <p>В прошлой задаче мы использовали переменные fahrenheit и celsius как числа, в этой — будем работать с ними как со
+    <p class="condition">В прошлой задаче мы использовали переменные fahrenheit и celsius как числа, в этой — будем
+        работать с ними как со
         строками.
         Применив переменные и шаблонные строки, выведите в консоль строку:
         '_fahrenheit_ градуса по Фаренгейту - это _celsius_ градуса по Цельсию.'
         где _fahrenheit_ и _celsius_ — это значения соответствующих переменных.</p>
-    <p>Чтобы создать шаблонную строку, заключите текст в обратные кавычки. Затем поместите переменные внутрь шаблонной
+    <p class="condition">Чтобы создать шаблонную строку, заключите текст в обратные кавычки. Затем поместите переменные
+        внутрь шаблонной
         строки, заключив их в фигурные скобки с долларом: ${имя переменной}:
         `${fahrenheit} градуса по Фаренгейту - это ...`</p>
-    <blockquote>let fahrenheit= 451;<br>
-        let celsius = (fahrenheit - 32) / 1.8;<br>
+    <code class="code">
+        let fahrenheit=451;
+             let celsius=(fahrenheit - 32)
+        / 1.8;
         console.log(`${fahrenheit} градуса по Фаренгейту - это ${celsius} градуса по Цельсию.`);
-    </blockquote>
-
+    </code>
     <h2>Условия, больше-меньше, булевы операции</h2>
-    <p>Подставьте логический оператор === либо !== между операндами так, чтобы все выражения вернули значение false.</p>
-    <blockquote>console.log(7!==7);<br>
-        console.log('aA'==='Aa');<br>
-        console.log(((25 * 12 + 1) * 4) / 5!==(50 * 6 + 2 * 0.5) / 1.25);<br></blockquote>
+    <p class="condition">Подставьте логический оператор === либо !== между операндами так, чтобы все выражения вернули
+        значение false.</p>
+    <code class="code">console.log(7!==7);
+        console.log('aA'==='Aa');
+        console.log(((25 * 12 + 1) * 4) / 5!==(50 * 6 + 2 * 0.5) / 1.25);</code>
     <hr>
-    <p>Сейчас в консоль выводится утверждение, что «2020 год — високосный». Добавьте условие if перед инструкцией console.log, чтобы утверждение не было голословным.
+    <p class="condition">Сейчас в консоль выводится утверждение, что «2020 год — високосный». Добавьте условие if перед
+        инструкцией console.log, чтобы утверждение не было голословным.
         Номер года хранится в переменной year.
         Для простоты будем считать, что год — високосный, если его номер кратен 4.</p>
-    <blockquote>let year = 2020;
-
-        // добавьте условие здесь <br>
-        if (year%4==0) { <br>
+    <code class="code">let year = 2020;
+        // добавьте условие здесь
+        if (year%4==0) {
         console.log(year + ' год - високосный');
-        }</blockquote>
+        }</code>
     <hr>
-    <p>Добавьте условие else на случай, если в переменной year окажется невисокосный год.
+    <p class="condition">Добавьте условие else на случай, если в переменной year окажется невисокосный год.
         В этом случае выводите в консоль «XXXX год — невисокосный», например: «2009 год — невисокосный».</p>
-    <blockquote>let year = 2019;
-
+    <code class="code">let year = 2019;
         if (year % 4 === 0) {
         console.log(year + ' год - високосный');
         }
-        else {console.log(year + ' год - невисокосный');}</blockquote>
+        else {console.log(year + ' год - невисокосный');}</code>
     <hr>
-    <p>Правильный расчёт високосных годов ведётся по правилу:
+    <p class="condition">Правильный расчёт високосных годов ведётся по правилу:
         год, номер которого кратен 400, — високосный;
         остальные годы, номер которых кратен 100, — невисокосные;
         остальные годы, номер которых кратен 4, — високосные.
-        Дополните условие if (...), чтобы проверка на «високосность» была настоящей. Используйте булевы операции И (&&) и ИЛИ (||).</p>
-    <blockquote>let year = 2019;<br>
-
-        if (year % 400 == 0||year % 4 == 0 && year % 100 !== 0)<br> {
+        Дополните условие if (...), чтобы проверка на «високосность» была настоящей. Используйте булевы операции И (&&)
+        и ИЛИ (||).</p>
+    <code class="code">let year = 2019;
+        if (year % 400 == 0||year % 4 == 0 && year % 100 !== 0) {
         console.log(year + ' год - високосный');
-        }<br>
-        else  {console.log(year + ' год - невисокосный');
-        }</blockquote>
+        }
+        else {console.log(year + ' год - невисокосный');
+        }</code>
     <h2>Массивы, создание, доступ по индексу, длина массива</h2>
-    <p>Создайте переменную morningList и запишите в неё массив дел, который включает в себя следующие строки:
-        'Встать с кровати'<br>
-        'Почистить зубы'<br>
-        'Проверить сториз в Инстаграме'<br>
-        'Позавтракать'<br>
+    <p class="condition">Создайте переменную morningList и запишите в неё массив дел, который включает в себя следующие
+        строки:
+        'Встать с кровати'
+        'Почистить зубы'
+        'Проверить сториз в Инстаграме'
+        'Позавтракать'
         Выведите получившийся массив в консоль.</p>
-    <blockquote>let morningList = ['Встать с кровати', 'Почистить зубы', 'Проверить сториз в Инстаграме', 'Позавтракать'] // Создайте массив
-        <br>
-        console.log(morningList);</blockquote>
+    <code class="code">let morningList = ['Встать с кровати', 'Почистить зубы', 'Проверить сториз в Инстаграме',
+        'Позавтракать'] // Создайте массив
+        console.log(morningList);</code>
     <hr>
-    <p>Выведите в консоль первый и последний элемент массива. Индекс последнего элемента найдите свойством .length. Напомним, что счёт элементов идёт с нуля.</p>
-    <blockquote>let morningList = [
-        'Встать с кровати',<br>
-        'Почистить зубы',<br>
-        'Проверить сториз в Инстаграме',<br>
-        'Позавтракать'];<br>
-
-        console.log(morningList[0]); // Выведите первый элемент<br>
-        console.log(morningList[morningList.length-1]); // Выведите последний элемент</blockquote>
+    <p class="condition">Выведите в консоль первый и последний элемент массива. Индекс последнего элемента найдите
+        свойством .length. Напомним, что счёт элементов идёт с нуля.</p>
+    <code class="code">let morningList = [
+        'Встать с кровати',
+        'Почистить зубы',
+        'Проверить сториз в Инстаграме',
+        'Позавтракать'];
+        console.log(morningList[0]); // Выведите первый элемент
+        console.log(morningList[morningList.length-1]); // Выведите последний элемент</code>
     <hr>
-    <p>Не меняя определение переменной morningList, выполните с массивом следующие действия: <br>
-        запишите на место третьего по счёту элемента строку Сделать зарядку,<br>
-        в конце массива добавьте новый элемент: Помыть посуду.<br>
-        Обращайтесь к элементам массива по индексу.<br>
+    <p class="condition">Не меняя определение переменной morningList, выполните с массивом следующие действия:
+        запишите на место третьего по счёту элемента строку Сделать зарядку,
+        в конце массива добавьте новый элемент: Помыть посуду.
+        Обращайтесь к элементам массива по индексу.
         Выведите результат в консоль.</p>
-    <blockquote>let morningList = [<br>
-        'Встать с кровати',<br>
-        'Почистить зубы',<br>
-        'Проверить сториз в Инстаграме',<br>
-        'Позавтракать'];<br>
-        // Допишите код здесь, не меняя определение массив<br>
-        morningList[2] = "Сделать зарядку";<br>
-        morningList[morningList.length] = "Помыть посуду";<br>
-        console.log(morningList);</blockquote>
+    <code class="code">let morningList = [
+        'Встать с кровати',
+        'Почистить зубы',
+        'Проверить сториз в Инстаграме',
+        'Позавтракать'];
+        // Допишите код здесь, не меняя определение массив
+        morningList[2] = "Сделать зарядку";
+        morningList[morningList.length] = "Помыть посуду";
+        console.log(morningList);</code>
     <h2>Циклы for, while, do...while</h2>
-    <p>В прошлом уроке вы создали массив дел на утро.
+    <p class="condition">В прошлом уроке вы создали массив дел на утро.
         Циклом for выведите в консоль каждое из дел по порядку.</p>
-    <blockquote>let morningList = [<br>
-        'Встать с кровати',<br>
-        'Почистить зубы',<br>
-        'Сделать зарядку',<br>
-        'Позавтракать',<br>
-        'Помыть посуду'<br>
+    <code class="code">let morningList = [
+        'Встать с кровати',
+        'Почистить зубы',
+        'Сделать зарядку',
+        'Позавтракать',
+        'Помыть посуду'
         ];
-        for (let i= 0; i<morningList.length; i=i+1)<br>
-        {console.log(morningList[i]);}</blockquote>
+        for (let i= 0; i
+        "<"morningList.length
+        ; i=i+1)
+        {console.log(morningList[i]);}
+    </code>
     <hr>
-    <p>Список дел внушительный — как на всё найти силы? Давайте поленимся. Измените цикл таким образом, чтобы в консоль выводилось каждое второе дело.</p>
-    <blockquote>let morningList = [<br>
-        'Встать с кровати',<br>
-        'Почистить зубы',<br>
-        'Сделать зарядку',<br>
-        'Позавтракать',<br>
-        'Помыть посуду'<br>
+    <p class="condition">Список дел внушительный — как на всё найти силы? Давайте поленимся. Измените цикл таким
+        образом, чтобы в консоль выводилось каждое второе дело.</p>
+    <code class="code">let morningList = [
+        'Встать с кровати',
+        'Почистить зубы',
+        'Сделать зарядку',
+        'Позавтракать',
+        'Помыть посуду'
         ];
-        for(let i = 1; i < morningList.length; i=i+2) {<br>
+        for(let i = 1; i < morningList.length; i=i+2) {
         console.log(morningList[i]);
-        }</blockquote>
+        }</code>
     <hr>
-    <p>Вернёмся к циклу, который выводит элементы по одному, и перепишем его с помощью while.<br>
-        Цикл for содержит в скобках три выражения, записанные через точку с запятой:<br>
-        инициализация, у нас let i = 0;<br>
-        условие, у нас i < morningList.length;<br>
-        финальное выражение, у нас i +=1.<br>
-        Замените цикл for на цикл while:<br>
-        Объявите счётчик перед циклом.<br>
-        Поменяйте слово for на while, а в скобках оставьте только проверку условия.<br>
+    <p class="condition">Вернёмся к циклу, который выводит элементы по одному, и перепишем его с помощью while.
+        Цикл for содержит в скобках три выражения, записанные через точку с запятой:
+        инициализация, у нас let i = 0;
+        условие, у нас i < morningList.length;
+        финальное выражение, у нас i +=1.
+        Замените цикл for на цикл while:
+        Объявите счётчик перед циклом.
+        Поменяйте слово for на while, а в скобках оставьте только проверку условия.
         Финальное выражение поместите в тело цикла после console.log.</p>
-    <blockquote>let morningList = [<br>
-        'Встать с кровати',<br>
-        'Почистить зубы',<br>
-        'Сделать зарядку',<br>
-        'Позавтракать',<br>
-        'Помыть посуду'<br>
+    <code class="code">let morningList = [
+        'Встать с кровати',
+        'Почистить зубы',
+        'Сделать зарядку',
+        'Позавтракать',
+        'Помыть посуду'
         ];
-
-        // for (инициализация; условие; финальное выражение)<br>
-        let i = 0;<br>
-        while ( i < morningList.length ) {<br>
+        // for (инициализация; условие; финальное выражение)
+        let i = 0;
+        while ( i < morningList.length ) {
         console.log(morningList[i]);
         i =i + 1;
-        }</blockquote>
+        }</code>
     <h2>Функции: определение и вызов</h2>
-    <p>Мы написали функцию-счётчик, которая увеличивает переменную counter при каждом вызове. <br>
+    <p class="condition">Мы написали функцию-счётчик, которая увеличивает переменную counter при каждом вызове.
         Вызовите функцию три раза и выведите значение переменной counter в консоль.</p>
-    <blockquote>let counter = 0;<br>
-
-        function increaseCounter() {<br>
+    <code class="code">let counter = 0;
+        function increaseCounter() {
         counter++;
         }
-
-        // Вызовите функцию 3 раза<br>
-        increaseCounter();<br>
-        increaseCounter();<br>
-        increaseCounter();<br>
-        console.log(counter);</blockquote>
+        // Вызовите функцию 3 раза
+        increaseCounter();
+        increaseCounter();
+        increaseCounter();
+        console.log(counter);</code>
     <hr>
-    <p>Это код проверки года на високосность из урока про условия. <br>
+    <p class="condition">Это код проверки года на високосность из урока про условия.
         Определите функцию под названием isLeapYear и перенесите весь код внутрь.</p>
-    <blockquote>let year = 2020;<br>
-        function isLeapYear() {<br>
-        if ((year % 400 === 0) || ((year % 4 === 0) && !(year % 100 === 0))) {<br>
-        console.log(year + ' год - високосный');<br>
+    <code class="code">let year = 2020;
+        function isLeapYear() {
+        if ((year % 400 === 0) || ((year % 4 === 0) && !(year % 100 === 0))) {
+        console.log(year + ' год - високосный');
         } else {
-        console.log(year + ' год - невисокосный');<br>
+        console.log(year + ' год - невисокосный');
         }
         }
-        isLeapYear();</blockquote>
+        isLeapYear();</code>
     <hr>
-    <p>В предыдущем задании вы описали функцию для проверки кода на високосность. В этом задании вам предстоит сделать её более универсальной. Чтобы функция могла проверять любой год на високосность, получая его как параметр.
+    <p class="condition">В предыдущем задании вы описали функцию для проверки кода на високосность. В этом задании вам
+        предстоит сделать её более универсальной. Чтобы функция могла проверять любой год на високосность, получая его
+        как параметр.
         Удалите определение переменной year и добавьте параметр функции с таким же названием.</p>
-    <blockquote>function isLeapYear(year) {<br>
-        if ((year % 400 === 0) || ((year % 4 === 0) && !(year % 100 === 0))) {<br>
-        console.log(year + ' год - високосный');<br>
+    <code class="code">function isLeapYear(year) {
+        if ((year % 400 === 0) || ((year % 4 === 0) && !(year % 100 === 0))) {
+        console.log(year + ' год - високосный');
         } else {
-        console.log(year + ' год - невисокосный');<br>
+        console.log(year + ' год - невисокосный');
         }
         }
-        isLeapYear(2020);</blockquote>
+        isLeapYear(2020);</code>
     <hr>
-    <p>Функция проверки года на високосность готова — пора её вызвать. <br>
+    <p class="condition">Функция проверки года на високосность готова — пора её вызвать.
         Сделайте это трижды с разными значениями года: 2020, 2021 и 2022.</p>
-    <blockquote>function isLeapYear(year) {<br>
-        if ((year % 400 === 0) || ((year % 4 === 0) && !(year % 100 === 0))) {<br>
-        console.log(year + ' год - високосный');<br>
+    <code class="code">function isLeapYear(year) {
+        if ((year % 400 === 0) || ((year % 4 === 0) && !(year % 100 === 0))) {
+        console.log(year + ' год - високосный');
         } else {
-        console.log(year + ' год - невисокосный');<br>
+        console.log(year + ' год - невисокосный');
         }
         }
-        isLeapYear(2020);<br>
-        isLeapYear(2021);<br>
-        isLeapYear(2022);</blockquote>
+        isLeapYear(2020);
+        isLeapYear(2021);
+        isLeapYear(2022);</code>
     <hr>
-    <p>Функция проверяет год и выводит сообщение в консоль. Это неудачное решение, потому что нам может понадобиться это сообщение не только в консоли, но и где-то ещё.<br>
-        Замените все инструкции console.log внутри функции на return.<br>
+    <p class="condition">Функция проверяет год и выводит сообщение в консоль. Это неудачное решение, потому что нам
+        может понадобиться это сообщение не только в консоли, но и где-то ещё.
+        Замените все инструкции console.log внутри функции на return.
         Обратите внимание, что скобки для return не нужны.</p>
-    <blockquote>function isLeapYear(year) {<br>
-        if ((year % 400 === 0) || ((year % 4 === 0) && !(year % 100 === 0))) {<br>
-        return year + ' год - високосный';<br>
+    <code class="code">function isLeapYear(year) {
+        if ((year % 400 === 0) || ((year % 4 === 0) && !(year % 100 === 0))) {
+        return year + ' год - високосный';
         } else {
-        return year + ' год - невисокосный';<br>
+        return year + ' год - невисокосный';
         }
         }
-        isLeapYear(2020);<br>
-        isLeapYear(2021);<br>
-        isLeapYear(2022);</blockquote>
+        isLeapYear(2020);
+        isLeapYear(2021);
+        isLeapYear(2022);</code>
     <hr>
-    <p>Оставьте только один из трёх вызовов функции, с 2020 годом, остальные удалите — они не понадобятся.<br>
-        Запишите результат вызова функции в переменную checkResult.<br>
+    <p class="condition">Оставьте только один из трёх вызовов функции, с 2020 годом, остальные удалите — они не
+        понадобятся.
+        Запишите результат вызова функции в переменную checkResult.
         Отобразите эту переменную во всплывающем окне с помощью alert, а также выведите в консоль.</p>
-    <blockquote>function isLeapYear(year) {<br>
-        if ((year % 400 === 0) || ((year % 4 === 0) && !(year % 100 === 0))) {<br>
-        return year + ' год - високосный';<br>
+    <code class="code">function isLeapYear(year) {
+        if ((year % 400 === 0) || ((year % 4 === 0) && !(year % 100 === 0))) {
+        return year + ' год - високосный';
         } else {
-        return year + ' год - невисокосный';<br>
+        return year + ' год - невисокосный';
         }
         }
-        let checkResult = isLeapYear(2020);<br>
+        let checkResult = isLeapYear(2020);
         alert(checkResult);
-        console.log(checkResult);</blockquote>
+        console.log(checkResult);</code>
     <h2>Объекты</h2>
-    <p>Создайте переменную employee. Запишите в неё объект с полями:<br>
-        firstName — 'Василий'.<br>
-        lastName — 'Тёркин'.<br>
-        age — 28.<br>
+    <p class="condition">Создайте переменную employee. Запишите в неё объект с полями:
+        firstName — 'Василий'.
+        lastName — 'Тёркин'.
+        age — 28.
         Выведите объект в консоль.</p>
-    <blockquote>let employee = {firstName:'Василий', lastName:'Тёркин',age:28}<br> //допишите код здесь
-        console.log(employee);</blockquote>
-    <p>Напишите функцию getFullName, которая принимает на вход объект employee с двумя свойствами: firstName и lastName. Функция должна выводить в консоль новую строку: имя и фамилию сотрудника через пробел.
+    <code class="code">let employee = {firstName:'Василий', lastName:'Тёркин',age:28} //допишите код здесь
+        console.log(employee);</code>
+    <hr>
+    <p class="condition">Напишите функцию getFullName, которая принимает на вход объект employee с двумя свойствами:
+        firstName и lastName. Функция должна выводить в консоль новую строку: имя и фамилию сотрудника через пробел.
         После того как создадите функцию — вызовите её.</p>
-    <blockquote>let employee = {
-        firstName: 'Василий',<br>
-        lastName: 'Тёркин',<br>
+    <code class="code">let employee = {
+        firstName: 'Василий',
+        lastName: 'Тёркин',
         age: 28,
         }
-        function getFullName(employee){<br>
-        console.log(employee.firstName + ' ' + employee.lastName);<br>
+        function getFullName(employee){
+        console.log(employee.firstName + ' ' + employee.lastName);
         }
-        getFullName(employee);</blockquote>
-
+        getFullName(employee);</code>
+    <hr>
+    <p class="condition">Замените console.log внутри функции getFullName на return — пусть функция возвращает значение
+        вместо того, чтобы выводить его в консоль.
+        Запишите результат вызова getFullName в поле fullName объекта employee и выведите весь объект целиком в
+        консоль.</p>
+    <code class="code">let employee = {
+        firstName: 'Василий',
+        lastName: 'Тёркин',
+        age: 28
+        }
+        function getFullName(employee){
+        return(employee.firstName + ' ' + employee.lastName);
+        }
+        getFullName(employee);
+        employee.fullName = getFullName(employee);
+        console.log(employee.fullName);</code>
+    <h2>Введение в примитивы</h2>
+    <h3>Примитивные типы данных. Оператор typeof</h3>
+    <p class="condition">Мы подготовили функцию, которая переводит метры в футы. Но у неё есть недостаток: если передать
+        на вход не число, она этого не заметит и всё равно постарается осуществить перевод.
+        Допишите условие в if, чтобы выдать ошибку, если было введено не число.</p>
+    <code class="code">function metresToFeet(metres) {
+        if (typeof metres !== "number") {
+        console.log('Эта функция имеет дело только с числами.');
+        } else {
+        const feetInMetre = 3.28;
+        return feetInMetre * metres;
+        }
+        }
+        const theEiffelTowerHeight = 324;
+        console.log(metresToFeet(theEiffelTowerHeight));</code>
+    <hr>
 </div>
 </body>
 </html>
